@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.link-hover-effect:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  bottom: -3px;
+  right: 0;
+  transition: all 300ms ease;
+}
+
+.link-hover-effect:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.link-hover-effect-white:after {
+  background-color: white;
+}
+
+.link-hover-effect-black:after {
+  background-color: black;
+}
+
+li {
+  list-style: none;
+}
+
+#about-me {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+#about-me nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+#about-me nav h1 {
+  font-size: 36px;
+  color: #6C63FF;
+}
+#about-me nav .nav-lists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+  width: 100%;
+  list-style: none;
+}
+#about-me nav .nav-lists .contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background-color: #6C63FF;
+  color: white;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+#about-me nav .nav-lists .contact-btn:hover {
+  background-color: #544ec8;
+}
+#about-me nav .burger-menu {
+  position: absolute;
+  right: 10px;
+  top: 23px;
+  display: none;
+}
+#about-me header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+#about-me header .mask-avatar {
+  width: 100px;
+  height: 100px;
+}
+#about-me header .mask-avatar .avatar {
+  width: 100px;
+  height: 100px;
+}
+#about-me header h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+#about-me header h1 span {
+  color: #6C63FF;
+}
+#about-me header p {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+#about-me header p span {
+  color: #6C63FF;
+}
+#about-me header .links {
+  margin-top: 20px;
+}
+#about-me header .links a {
+  padding: 0 10px;
+  font-size: 20px;
+}
+#about-me header .mask-img-container {
+  max-width: 776px;
+  max-height: 396px;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+#about-me header .mask-img-container .img-container {
+  max-width: 776px;
+  max-height: 396px;
+  width: 100%;
+  height: 100%;
+}
+
+#languages {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+#languages .languages-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#languages .languages-container h1 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+#languages .languages-container h1 span {
+  color: #6C63FF;
+}
+#languages .languages-container .language-lists {
+  display: flex;
+  max-width: 776px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#languages .languages-container .language-lists .language {
+  max-width: 194px;
+  max-height: 150px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#languages .languages-container .language-lists .language h4 {
+  transform: scale(0);
+  transition: all 300ms ease;
+}
+#languages .languages-container .language-lists .language .language-img-wrapper {
+  max-width: 132px;
+  max-height: 150px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+#languages .languages-container .language-lists .language .language-img-wrapper .language-img {
+  max-width: 100px;
+  max-height: 100px;
+  width: 100%;
+  height: 100%;
+  transition: all 300ms ease;
+}
+#languages .languages-container .language-lists .language:hover .language-img {
+  transform: scale(0.9);
+  opacity: 0.86;
+  filter: brightness(80%);
+}
+#languages .languages-container .language-lists .language:hover h4 {
+  transform: scale(1);
+}
+
+#projects {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+#projects .project-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#projects .project-container h1 {
+  font-size: 36px;
+}
+#projects .project-container h1 span {
+  color: #6C63FF;
+}
+#projects .project-container .projects-list .project {
+  margin: 100px 0;
+}
+#projects .project-container .projects-list .project .project-wrapper {
+  max-width: 696px;
+  max-height: 456px;
+  margin-top: 20px;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+}
+#projects .project-container .projects-list .project .project-wrapper .project-img {
+  width: 100%;
+  transition: all 500ms ease;
+}
+#projects .project-container .projects-list .project .project-wrapper .description {
+  position: absolute;
+  top: 50%;
+  transform: translateY(100%);
+  left: 90px;
+  max-width: 550px;
+  z-index: 3;
+  opacity: 0;
+  transition: all 400ms;
+}
+#projects .project-container .projects-list .project .project-wrapper .description h3 {
+  text-align: left;
+  color: white;
+  font-size: 40px;
+}
+#projects .project-container .projects-list .project .project-wrapper .description h4 {
+  text-align: left;
+  color: white;
+}
+#projects .project-container .projects-list .project .project-wrapper .description p {
+  text-align: left;
+  color: white;
+  margin: 16px 0;
+}
+#projects .project-container .projects-list .project .project-wrapper .description a {
+  color: white;
+}
+#projects .project-container .projects-list .project .project-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1c1d25;
+  opacity: 0;
+  transition: opacity 450ms ease;
+  z-index: 2;
+}
+#projects .project-container .projects-list .project:hover .project-wrapper:before {
+  opacity: 0.7;
+}
+#projects .project-container .projects-list .project:hover .project-img {
+  transform: scale(1.07);
+  filter: blur(5px);
+}
+#projects .project-container .projects-list .project:hover .description {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+#footer {
+  background-color: #242424;
+  width: 100%;
+  height: 263px;
+}
+#footer footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#footer footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#footer footer .footer-container .social-links {
+  margin: 20px 0;
+}
+#footer footer .footer-container .social-links .footer-link {
+  color: white;
+  margin: 0 30px;
+}
+#footer footer .footer-container h4 {
+  color: white;
+}
+#footer footer .footer-container p {
+  color: white;
+}
+
+form {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form .form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 520px;
+  width: 100%;
+}
+form .form-container .name-and-email {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+form .form-container .name-and-email .name-container {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+form .form-container .name-and-email .name-container input {
+  height: 40px;
+  outline: none;
+  border-radius: 4px;
+  padding-left: 10px;
+  border: 1px solid #E6ECF8;
+}
+form .form-container .name-and-email .email-container {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+form .form-container .name-and-email .email-container input {
+  height: 40px;
+  outline: none;
+  border: 1px solid #E6ECF8;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+form .form-container .message-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  margin-top: 30px;
+}
+form .form-container .message-container textarea {
+  width: 100%;
+  outline: none;
+  border-radius: 4px;
+  padding-left: 10px;
+  height: 200px;
+  border-color: #E6ECF8;
+}
+form .form-container .submitBtn {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background-color: #6C63FF;
+  color: white;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+form .form-container .submitBtn:hover {
+  background-color: #544ec8;
+}
+
+@media screen and (max-width: 768px) {
+  body #about-me nav {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 400px) {
+  body {
+    overflow-x: hidden;
+  }
+  body #about-me nav h1 {
+    width: 200px;
+    font-size: 20px;
+  }
+  body #about-me nav .nav-lists li {
+    display: none;
+  }
+  body #about-me nav .nav-lists .contact-btn {
+    position: absolute;
+    right: 0;
+    height: 35px;
+    width: 95px;
+  }
+  body header h1 {
+    font-size: 15px !important;
+  }
+  body #languages .languages-container {
+    display: flex !important;
+  }
+  body #languages .languages-container h1 {
+    font-size: 20px;
+  }
+  body #languages .language-lists {
+    flex-direction: column;
+  }
+  body #languages .language-lists .language .language-img-wrapper {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  body #languages .language-lists .language .language-img-wrapper .language-img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  body #projects .project-container .projects-list .project .project-wrapper {
+    max-width: 350px;
+  }
+  body #footer footer .footer-container .social-links .footer-link {
+    margin: 0 10px;
+  }
+  form .form-container .name-and-email {
+    flex-direction: column;
+  }
+  form .form-container .name-and-email .name-container {
+    margin-bottom: 30px;
+    width: 80%;
+  }
+  form .form-container .name-and-email .email-container {
+    width: 80%;
+  }
+  form .form-container .message-container {
+    width: 80%;
+    height: 150px;
+  }
+}/*# sourceMappingURL=style.css.map */

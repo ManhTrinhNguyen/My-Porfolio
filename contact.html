@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <section id="about-me">
+        <nav>
+            <h1 class="logo">Levi Nguyen</h1>
+            <ul class="nav-lists">
+                <li>
+                    <a class="link-hover-effect link-hover-effect-black" href="#languages">Languages</a>    
+                </li>
+                <li>
+                    <a class="link-hover-effect link-hover-effect-black" href="#projects">Projects</a>
+                </li>
+                <a href="./index.html" class="contact-btn">Back</a>
+    
+            </ul>
+            <div class="burger-menu"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+
+        <header>
+            <figure class="mask-avatar">
+                <img class="avatar" src="./assets/avatar.png" alt="">
+            </figure>
+           <h1 class="introduction">Thanks! for taking the thime to reach out.</h1>
+        </header>
+    </section>
+
+    <!-- FormSubmit -->
+
+    <form action="https://formsubmit.co/trinhnguyen511998@gmail.com" method="POST">
+
+        <div class="form-container">
+            <div class="name-and-email">
+                <div class="name-container">
+                    <label>Name</label>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+            
+                <div class="email-container">
+                    <label>Email</label>
+                 <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+            </div>
+
+             <div class="message-container">
+                <label>Message</label>
+                 <textarea name="message" placeholder="Message" required></textarea>      
+            </div>
+            <input type="hidden" name="_next" value="http://localhost:52331/thanks.html">
+            <input type="hidden" name="_captcha" value="false">
+
+            <button class="submitBtn" type="submit">Send</button>
+        </div>
+   </form>
+
+ 
+</body>
+</html>
